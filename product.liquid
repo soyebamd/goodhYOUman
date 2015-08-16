@@ -16,7 +16,7 @@
       <p class="price">{{ product.price_min | money }}</p>
     {% endif %}
 
-    <div class="share-buttons">
+   {% comment %} <div class="share-buttons">
       <div class="share-wrap twitter">
         <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-text="{{ shop.name }} | {{ product.title }}:" data-via="{{ settings.twitter-username }}">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -38,6 +38,7 @@
       </div>
     </div>
   </div>
+   {% endcomment %}
 
   <section id="product-area" class="clearfix">
 
